@@ -1,9 +1,8 @@
 body {
-  border-top: 5px solid #8C9EFF;
+  border-top: 0.5em solid #8C9EFF;
 }
 
 .App {
-  text-align: center;
   margin: 0 auto;
   padding: 1em;
   max-width: 20em;
@@ -17,26 +16,49 @@ a {
 
 h1 {
   font: inherit;
-  font-weight: 600;
-  padding: 1em;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 0;
 }
 
-textarea { 
+label {
+  text-align: left;
+  padding: 0em;
+  color: #424242;
+}
+
+textarea, input { 
   width: 100%;
-  height: 15em;
   background: #F5F5F5;
   border: 0;
   padding: 1em;
   box-sizing: border-box;
   font: inherit;
+  color: #424242;
+}
+
+input {
+  height: 3.5em;
+  margin-top: 1em;
+}
+
+input.error {
+  border: 0.25em solid #f44336;
+  background: #ffebee;
+}
+
+textarea {
+  height: 15em;
 }
 
 button {
   width: 100%;
+  height: 3.5em;
   border-style: none;
   padding: 1em;
   font: inherit;
   background: #536DFE;
   border-radius: 4px;
   color: #fff;
+  margin: 1em 0;
 }
